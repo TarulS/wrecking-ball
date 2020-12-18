@@ -3,11 +3,12 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-
+var engine, world;
 function setup() {
 	createCanvas(3000, 800);
+	engine = Engine.create();
+	world = engine.world;
 	
-
 }
 
 
